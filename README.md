@@ -1,5 +1,9 @@
 ##### Learning Chef 12.x
 
+* Goals to achieve
+  * be able to provision docker with Chef DK
+  * be able to setup and integrate entire testing process with Jenkins
+
 * https://learn.chef.io/rhel/configure-a-resource/
 * download Chef DK for exploring the Chef feature
 * I test recipes on Redhat Enterprise 7.x. Chef runs fine.
