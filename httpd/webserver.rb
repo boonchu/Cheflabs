@@ -12,6 +12,6 @@ file '/var/www/html/index.html' do
 </html>'
 end
 
-service 'iptables' do
-	action :stop
+service 'firewalld' do
+	action [:stop, :disable]
 end
