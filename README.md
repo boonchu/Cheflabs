@@ -16,5 +16,14 @@
 * simply protects by firewalld (iptables) from host side.
 * use Chef DK to provision production simulation.
 
+##### Prior to use the chef command
+* run chef to validate the shell environment and verify environemnts
+```
+$ chef shell-init bash
+$ chef verify
+```
+* (if any) add your organization that recently created from hosted chef site 
+  directly to your prepared cookbooks.
+
 ##### How to use
 * sudo chef-apply [recipe]
