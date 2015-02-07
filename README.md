@@ -7,9 +7,10 @@
 ##### How to setup lab
 
 * cheapest solution is virtualbox application to host your virtual VM.
-* I setup through cobbler kickstart [cobbler](http://www.cobblerd.org/) 
-* I like cobbler since it launched from day one I support and ask people
-  from training or forum how I can provision OS on my nodes farm.
+* setup through cobbler kickstart [cobbler](http://www.cobblerd.org/).
+* setup my own DNS to cache all local host names.
+* simply protects by firewalld (iptables) from host side.
+* use Chef DK to provision production simulation.
 
 ##### How to use
 * sudo chef-apply [recipe]
