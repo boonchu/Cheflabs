@@ -1,4 +1,4 @@
-# learn_chef_httpd
+##### learn_chef_httpd Cookbook
 
-TODO: Enter the cookbook description here.
+* sudo chef-client --local-mode --runlist 'recipe[learn_chef_httpd]'
 
