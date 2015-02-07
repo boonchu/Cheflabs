@@ -12,8 +12,14 @@ file '/var/www/html/index.html' do
 </html>'
 end
 
-if platform?("redhat") and node.platform_version.to_f > 6.9
-	service 'firewalld' do
-		action [:stop, :disable]
+if platform?("redhat") 
+	if node.platform_version.to_f < 7.0
+		service 'iptables' do
+			action [:stop, :disable]
+		end
+	else
+		service 'firewalld' do
+			action [:stop, :disable]
+		end
 	end
 end
