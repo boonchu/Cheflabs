@@ -15,7 +15,6 @@ chef generate cookbook learn_chef_httpd && tree
 * sample output
 ```
 $ sudo chef-client --local-mode --runlist 'recipe[learn_chef_httpd]'
-[sudo] password for bigchoo:
 [2015-02-07T09:55:54-08:00] WARN: No config file found or specified on command line, using command line options.
 Starting Chef Client, version 12.0.3
 resolving cookbooks for run list: ["learn_chef_httpd"]
@@ -36,4 +35,17 @@ Recipe: learn_chef_httpd::default
 Running handlers:
 Running handlers complete
 Chef Client finished, 1/6 resources updated in 3.898473203 seconds
+```
+* download starter kit and extract the chef 
+```
+$ unzip  ~/chef-starter.zip chef-repo/.chef*
+$ mv .chef <folder with cookbook>
+```
+* upload cookbook 
+```
+$ knife cookbook upload learn_chef_httpd
+```
+* run chef-client and use uploaded cookbooks
+```
+$ sudo chef-client --local-mode --runlist 'recipe[learn_chef_httpd]'
 ```
