@@ -12,6 +12,8 @@ file '/var/www/html/index.html' do
 </html>'
 end
 
-service 'firewalld' do
-	action [:stop, :disable]
+if platform?("redhat") and node.platform_version.to_f > 6.5
+	service 'firewalld' do
+		action [:stop, :disable]
+	end
 end

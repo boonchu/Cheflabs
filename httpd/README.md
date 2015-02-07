@@ -12,4 +12,6 @@ $ curl localhost
 </html>
 ```
 ##### Change log
-* Modified recipe to fit with redhat 7 firewalld service name - 02/07/2015 (boonchu)
+02/07/2015 (boonchu)
+	* Modified recipe to fit with redhat 7 firewalld service name 
+	* Updated recipe to detect platform node attributes
