@@ -4,4 +4,4 @@
 * I test recipes on Redhat Enterprise 7.x. Chef runs fine.
 
 ##### How to use
-* sudo chef-apply <recipe> 
+* sudo chef-apply [recipe]
