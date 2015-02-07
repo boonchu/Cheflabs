@@ -22,8 +22,8 @@
 $ chef shell-init bash
 $ chef verify
 ```
-* (if any) add your organization that recently created from hosted chef site 
-  directly to your prepared cookbooks.
+* (if any) add your organization starter kit that recently created 
+  from hosted chef site directly to your prepared cookbooks.
 
 ##### How to use
 * sudo chef-apply [recipe]
