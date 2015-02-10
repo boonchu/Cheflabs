@@ -1,9 +1,9 @@
 #! /usr/bin/env ruby
 
-class Hello World
+class HiWorld
 	def self.hello
 		puts "Hello World from Ruby"
 	end
 end
 
-HelloWorld.hello
+HiWorld.hello
