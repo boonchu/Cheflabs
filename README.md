@@ -10,7 +10,7 @@
 
 ##### How to setup lab
 
-* cheapest solution is virtualbox application to host your virtual VM.
+* cheapest solution is [virtualbox](https://www.virtualbox.org/wiki/Downloads) application to host your virtual VM.
 * setup through cobbler kickstart [cobbler](http://www.cobblerd.org/).
 * setup my own DNS to cache all local host names.
 * simply protects by firewalld (iptables) from host side.
