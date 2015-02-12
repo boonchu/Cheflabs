@@ -10,11 +10,17 @@ $ tree .chef
 ```
 * push the cookbook
 ```
-$ knife 
+$ knife cookbook upload learn_chef_httpd
 ```
-* bootstrap node from remote node
+* bootstrap new node from remote node
 ```
 knife bootstrap vmk2.cracker.org --ssh-user 'user' --ssh-password 'password' \
   --sudo --use-sudo-password --node-name 'hostname' \
   --run-list 'recipe[learn_chef_httpd]'
 ```
+* list of nodes that recently converge (last chef-client run).
+```
+$ knife node list
+```
+
+
