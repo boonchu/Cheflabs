@@ -22,5 +22,8 @@ knife bootstrap vmk2.cracker.org --ssh-user 'user' --ssh-password 'password' \
 ```
 $ knife node list
 ```
-
-
+* list of nodes that recently converge with timestamp
+```
+$ knife exec -E 'nodes.all {|n| puts "#{n.name} #{Time.at(n[:ohai_time])}"}'
+vmk2.cracker.org 2015-02-11 21:04:04 -0800
+```
