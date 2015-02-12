@@ -27,3 +27,8 @@ $ knife node list
 $ knife exec -E 'nodes.all {|n| puts "#{n.name} #{Time.at(n[:ohai_time])}"}'
 vmk2.cracker.org 2015-02-11 21:04:04 -0800
 ```
+* similar output from knife status
+```
+$ knife status
+16 minutes ago, vmk2.cracker.org, vmk2.cracker.org, 192.168.1.162, redhat 7.1.
+```
