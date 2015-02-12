@@ -1,8 +1,12 @@
 ###### Knife Bootstrap
 
-* get the starter kit from hosted Chef
+* get the starter kit from hosted Chef and unzip it to parent of cookbook folder.
 ```
- 
+$ tree .chef
+.chef
+├── boonchu.pem
+├── knife.rb
+└── thai-foods-validator.pem
 ```
 * push the cookbook
 ```
