@@ -1,0 +1,5 @@
+[server1.cracker.org_8081_artifactory_repo]
+name=added from: http://server1.cracker.org:8081/artifactory/local-rpm-release/
+baseurl=http://server1.cracker.org:8081/artifactory/local-rpm-release/
+enabled=1
+gpgcheck=0
