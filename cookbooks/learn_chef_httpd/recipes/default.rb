@@ -1,4 +1,14 @@
-package 'httpd'
+package 'httpd' do
+  action :install
+end
+
+package 'cowsay' do
+  action :install
+end
+
+package 'fortune-mod' do
+  action :install
+end
 
 service 'httpd' do
 	action [:start, :enable]
