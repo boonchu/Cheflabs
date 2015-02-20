@@ -5,6 +5,7 @@ first yum cookbook.
 Recipes
 -------
 * tie with artifactory yum repos.
+![artifacts](https://github.com/boonchu/Cheflabs/blob/master/cookbooks/yum/artifacts.png)
 ```
 $ knife cookbook upload yum
 $ knife node run_list add [hostname] 'recipe[yum],recipe[learn_chef_httpd]'
