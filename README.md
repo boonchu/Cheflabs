@@ -17,6 +17,10 @@
 * use Chef DK to provision production simulation.
 
 ##### Prior to use the chef command
+* install Chef DK
+```
+$ sudo yum localinstall ./chefdk.x86_64 0:0.4.0-1
+```
 * run chef to validate the shell environment and verify environemnts
 ```
 $ chef shell-init bash
