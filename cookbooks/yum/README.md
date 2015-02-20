@@ -6,6 +6,16 @@ Recipes
 -------
 * tie with artifactory yum repos.
 ![artifacts](https://github.com/boonchu/Cheflabs/blob/master/cookbooks/yum/artifacts.png)
+* prepare my first repo file
+```
+bigchoo@server1 ~/lab/Cheflabs/cookbooks/yum (master)$ cat files/default/local-repo-epel7-extra.repo
+[server1.cracker.org_8081_artifactory_repo]
+name=added from: http://server1.cracker.org:8081/artifactory/local-rpm-release/
+baseurl=http://server1.cracker.org:8081/artifactory/local-rpm-release/
+enabled=1
+gpgcheck=0
+```
+* upload cookbook recipe
 ```
 $ knife cookbook upload yum
 $ knife node run_list add [hostname] 'recipe[yum],recipe[learn_chef_httpd]'
