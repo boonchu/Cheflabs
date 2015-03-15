@@ -31,3 +31,6 @@ $ chef verify
 
 ##### How to use
 * sudo chef-apply [recipe]
+
+##### links:
+* [Chef DK](http://tcotav.github.io/chefdk_getting_started.html)
